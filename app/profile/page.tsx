@@ -1,4 +1,12 @@
-import { BuildingOffice2Icon, UserIcon, CalendarDaysIcon, MapPinIcon, BriefcaseIcon } from '@heroicons/react/24/outline';
+import { 
+  BuildingOffice2Icon, 
+  UserIcon, 
+  MapPinIcon, 
+  BriefcaseIcon,
+  CubeIcon,
+  BuildingLibraryIcon,
+  DocumentCheckIcon
+} from '@heroicons/react/24/outline';
 
 // 아이콘과 텍스트가 있는 커스텀 데이터 줄 컴포넌트
 function InfoRow({ icon: Icon, label, value, children }: any) {
@@ -54,7 +62,7 @@ export default function ProfilePage() {
               value="민 성 현" 
             />
 
-            {/* 4. 소재지 */}
+            {/* 3. 소재지 */}
             <InfoRow 
               icon={MapPinIcon} 
               label="주소지" 
@@ -68,7 +76,7 @@ export default function ProfilePage() {
               </a>
             </InfoRow>
 
-            {/* 5. 주요 사업 */}
+            {/* 4. 사업 영역 (기존 유지) */}
             <InfoRow 
               icon={BriefcaseIcon} 
               label="사업 영역"
@@ -79,9 +87,9 @@ export default function ProfilePage() {
               </ul>
             </InfoRow>
 
-            {/* 5. 주요 사업 */}
+            {/* 5. 주요 품목 (수정됨) */}
             <InfoRow 
-              icon={BriefcaseIcon} 
+              icon={CubeIcon} 
               label="주요 품목"
             >
               <ul className="list-disc list-outside pl-5 space-y-2 text-stone-700">
@@ -90,8 +98,9 @@ export default function ProfilePage() {
               </ul>
             </InfoRow>
 
+             {/* 6. 주요거래처 (수정됨) */}
              <InfoRow 
-              icon={BriefcaseIcon} 
+              icon={BuildingLibraryIcon} 
               label="주요거래처"
             >
               <ul className="list-disc list-outside pl-5 space-y-2 text-stone-700">
@@ -99,8 +108,9 @@ export default function ProfilePage() {
               </ul>
             </InfoRow>
 
+            {/* 7. License (수정됨) */}
             <InfoRow 
-              icon={BriefcaseIcon} 
+              icon={DocumentCheckIcon} 
               label="License"
             >
               <ul className="list-disc list-outside pl-5 space-y-2 text-stone-700">
