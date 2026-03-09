@@ -7,7 +7,7 @@ export default function AutomotiveInkPage() {
         
         {/* 페이지 헤더 */}
         <header className="mb-16 md:mb-20 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
             <TruckIcon className="w-4 h-4" />
             <span>Products 2</span>
           </div>
@@ -21,7 +21,7 @@ export default function AutomotiveInkPage() {
           
           {/* 1. 엠블럼 */}
           <div className="bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col lg:flex-row overflow-hidden hover:shadow-md transition-shadow">
-            <div className="lg:w-64 bg-gradient-to-br from-amber-500 to-orange-600 text-white p-6 flex items-center justify-center text-center shrink-0">
+            <div className="lg:w-64 bg-gradient-to-br from-amber-500 to-yellow-600 text-white p-6 flex items-center justify-center text-center shrink-0">
               <h3 className="text-xl font-bold tracking-wide">엠블럼</h3>
             </div>
             <div className="p-6 lg:p-8 flex-1 flex flex-col gap-6 justify-center">
@@ -46,7 +46,7 @@ export default function AutomotiveInkPage() {
 
           {/* 2. 도어스커프 및 레버 */}
           <div className="bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col lg:flex-row overflow-hidden hover:shadow-md transition-shadow">
-            <div className="lg:w-64 bg-gradient-to-br from-orange-500 to-orange-600 text-white p-6 flex items-center justify-center text-center shrink-0">
+            <div className="lg:w-64 bg-gradient-to-br from-yellow-500 to-yellow-600 text-white p-6 flex items-center justify-center text-center shrink-0">
               <h3 className="text-xl font-bold tracking-wide leading-snug">도어스커프 <br/> 및 레버</h3>
             </div>
             <div className="p-6 lg:p-8 flex-1 flex flex-col justify-center">
@@ -65,7 +65,7 @@ export default function AutomotiveInkPage() {
 
           {/* 3. 각종 버튼류 */}
           <div className="bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col lg:flex-row overflow-hidden hover:shadow-md transition-shadow">
-            <div className="lg:w-64 bg-gradient-to-br from-orange-600 to-amber-700 text-white p-6 flex items-center justify-center text-center shrink-0">
+            <div className="lg:w-64 bg-gradient-to-br from-yellow-600 to-amber-700 text-white p-6 flex items-center justify-center text-center shrink-0">
               <h3 className="text-xl font-bold tracking-wide">각종 버튼류</h3>
             </div>
             <div className="p-6 lg:p-8 flex-1 flex flex-col justify-center">
@@ -112,7 +112,7 @@ export default function AutomotiveInkPage() {
 
           {/* 5. 림(휠) 데코전용 패드프린팅 시스템 (사진 2장에서 취합) */}
           <div className="bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col lg:flex-row overflow-hidden hover:shadow-md transition-shadow">
-            <div className="lg:w-64 bg-gradient-to-br from-orange-500 to-amber-600 text-white p-6 flex items-center justify-center text-center shrink-0">
+            <div className="lg:w-64 bg-gradient-to-br from-yellow-500 to-amber-600 text-white p-6 flex items-center justify-center text-center shrink-0">
               <h3 className="text-xl font-bold tracking-wide leading-snug">림(휠) 데코전용 <br/> 패드프린팅 <br/> 시스템</h3>
             </div>
             <div className="p-6 lg:p-8 flex-1 flex flex-col justify-center gap-4">
@@ -142,7 +142,7 @@ export default function AutomotiveInkPage() {
 
           {/* 6. 터치패널 및 디스플레이 */}
           <div className="bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col lg:flex-row overflow-hidden hover:shadow-md transition-shadow">
-            <div className="lg:w-64 bg-gradient-to-br from-amber-600 to-orange-700 text-white p-6 flex items-center justify-center text-center shrink-0">
+            <div className="lg:w-64 bg-gradient-to-br from-amber-600 to-yellow-700 text-white p-6 flex items-center justify-center text-center shrink-0">
               <h3 className="text-xl font-bold tracking-wide leading-snug">터치패널 및 <br/> 디스플레이</h3>
             </div>
             <div className="p-6 lg:p-8 flex-1 flex flex-col lg:flex-row gap-8 items-center">
@@ -160,7 +160,7 @@ export default function AutomotiveInkPage() {
                 <p className="text-stone-900 font-bold text-lg mb-3">유리 패널 전용의 특수한 블랙 잉크</p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-red-700 mt-2 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-700 mt-2 shrink-0"></span>
                     <p className="text-stone-700 font-medium break-keep">고 내열성 솔벤트 베이스의 블랙 잉크</p>
                   </li>
                 </ul>

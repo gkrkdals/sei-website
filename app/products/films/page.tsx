@@ -7,7 +7,7 @@ export default function FilmsPage() {
         
         {/* 페이지 헤더 */}
         <header className="mb-16 md:mb-20 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
             <Square3Stack3DIcon className="w-4 h-4" />
             <span>Products 5</span>
           </div>
@@ -91,7 +91,7 @@ export default function FilmsPage() {
 
         {/* 2번 문단: 적용 사례 이미지 (핑크색 라벨) */}
         <section>
-          <h2 className="text-2xl font-bold text-stone-900 mb-8 pl-2 border-l-4 border-red-700">
+          <h2 className="text-2xl font-bold text-stone-900 mb-8 pl-2 border-l-4 border-blue-700">
             주요 적용 분야
           </h2>
           

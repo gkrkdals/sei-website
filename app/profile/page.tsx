@@ -11,9 +11,9 @@ import {
 // 아이콘과 텍스트가 있는 커스텀 데이터 줄 컴포넌트
 function InfoRow({ icon: Icon, label, value, children }: any) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[200px,1fr] gap-4 border-b border-stone-100 py-6 last:border-b-0 hover:bg-red-50/50 px-4 rounded-xl transition-colors">
+    <div className="grid grid-cols-1 md:grid-cols-[200px,1fr] gap-4 border-b border-stone-100 py-6 last:border-b-0 hover:bg-blue-50/50 px-4 rounded-xl transition-colors">
       <div className="flex items-center gap-3 text-stone-900/80">
-        <Icon className="w-6 h-6 text-red-700 shrink-0" />
+        <Icon className="w-6 h-6 text-blue-700 shrink-0" />
         <span className="font-semibold text-lg">{label}</span>
       </div>
       <div className="text-stone-800 text-lg leading-relaxed pt-1 md:pt-0">
@@ -31,7 +31,7 @@ export default function ProfilePage() {
         
         {/* 페이지 헤더 섹션: 세련된 타이포그래피 (버건디 톤) */}
         <header className="mb-16 md:mb-20 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
             <BuildingOffice2Icon className="w-4 h-4" />
             <span>Company Overview</span>
           </div>
@@ -45,7 +45,7 @@ export default function ProfilePage() {
         </header>
 
         {/* 메인 콘텐츠: 고급스러운 카드 레이아웃 */}
-        <main className="bg-white p-8 md:p-12 rounded-3xl shadow-xl shadow-red-950/5 border border-stone-100">
+        <main className="bg-white p-8 md:p-12 rounded-3xl shadow-xl shadow-blue-950/5 border border-stone-100">
           <div className="space-y-2">
             
             {/* 1. 회사명 */}
@@ -70,7 +70,7 @@ export default function ProfilePage() {
               <p>서울 마포구 토정로 304, 용현빌딩 402호</p>
               <a 
                 href="/location" 
-                className="inline-block mt-2 text-sm text-red-700 hover:text-red-900 font-medium underline underline-offset-4"
+                className="inline-block mt-2 text-sm text-blue-700 hover:text-blue-900 font-medium underline underline-offset-4"
               >
                 지도 보기 &rarr;
               </a>

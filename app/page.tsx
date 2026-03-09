@@ -6,7 +6,7 @@ export default function Home() {
     <div className="w-full flex flex-col items-center">
       
       {/* 1. 히어로(Hero) 섹션: 다크 버건디/브라운 톤 */}
-      <section className="w-full relative py-24 bg-red-950 text-white overflow-hidden">
+      <section className="w-full relative py-24 bg-blue-950 text-white overflow-hidden">
         {/* [NEW] 무저작권 비즈니스 사진 배경, 버건디 틴트 적용 */}
         {/* [수정됨] 믹스블렌드를 빼고 투명도를 50%로 설정하여 사진 본연의 형태가 잘 보이게 함 */}
         <img 
@@ -16,31 +16,31 @@ export default function Home() {
         />
         
         {/* [수정됨] 통째로 90%로 덮던 방식을 버리고, 색상 자체에 투명도(/80, /60, /40)를 주어 사진이 은은하게 비치도록 그라데이션 조절 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950/80 via-red-900/60 to-orange-900/40 z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/80 via-blue-900/60 to-yellow-900/40 z-0"></div>
 
         {/* 배경 장식용 원형 그래픽 (레이저/열기 느낌) */}
-        <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-96 h-96 bg-red-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
-        <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-72 h-72 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+        <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
 
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
-          <span className="inline-block py-1 px-3 rounded-full bg-red-800/50 border border-red-700 text-red-100 text-sm font-semibold tracking-wider mb-6">
+          <span className="inline-block py-1 px-3 rounded-full bg-blue-800/50 border border-blue-700 text-blue-100 text-sm font-semibold tracking-wider mb-6">
             WELCOME TO SEI CORPORATION
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
             창조의 의미와 <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-200 to-white">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">
               가치가 있는 기업
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-red-50/80 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+          <p className="text-lg md:text-xl text-blue-50/80 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
             세계 최고 수준의 산업용 장비와 특수 잉크 솔루션으로<br className="hidden sm:block"/>
             고객의 비즈니스에 혁신적인 경쟁력을 더해드립니다.
           </p>
           <div className="flex justify-center gap-4">
-            <Link href="/profile" className="px-8 py-4 bg-white text-red-950 font-bold text-sm rounded-full hover:bg-stone-50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <Link href="/profile" className="px-8 py-4 bg-white text-blue-950 font-bold text-sm rounded-full hover:bg-stone-50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
               기업 현황 보기
             </Link>
-            <Link href="/solutions/laser" className="px-8 py-4 bg-red-800/40 text-white font-bold text-sm rounded-full border border-red-700 hover:bg-red-700/50 transition-all duration-300 backdrop-blur-sm">
+            <Link href="/solutions/laser" className="px-8 py-4 bg-blue-800/40 text-white font-bold text-sm rounded-full border border-blue-700 hover:bg-blue-700/50 transition-all duration-300 backdrop-blur-sm">
               솔루션 둘러보기
             </Link>
           </div>
@@ -52,9 +52,9 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* 카드 1 */}
-          <div className="bg-white p-10 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-100 hover:border-red-200 hover:shadow-2xl transition-all duration-300 group">
-            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-red-700 transition-all duration-300">
-              <GlobeAltIcon className="w-7 h-7 text-red-700 group-hover:text-white transition-colors" />
+          <div className="bg-white p-10 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-100 hover:border-blue-200 hover:shadow-2xl transition-all duration-300 group">
+            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-700 transition-all duration-300">
+              <GlobeAltIcon className="w-7 h-7 text-blue-700 group-hover:text-white transition-colors" />
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-4">글로벌 라이선스 파트너십</h3>
             <p className="text-stone-600 leading-relaxed">
@@ -67,9 +67,9 @@ export default function Home() {
           </div>
 
           {/* 카드 2 */}
-          <div className="bg-white p-10 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-100 hover:border-red-200 hover:shadow-2xl transition-all duration-300 group md:-translate-y-8">
-            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-red-700 transition-all duration-300">
-              <ShieldCheckIcon className="w-7 h-7 text-red-700 group-hover:text-white transition-colors" />
+          <div className="bg-white p-10 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-100 hover:border-blue-200 hover:shadow-2xl transition-all duration-300 group md:-translate-y-8">
+            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-700 transition-all duration-300">
+              <ShieldCheckIcon className="w-7 h-7 text-blue-700 group-hover:text-white transition-colors" />
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-4">압도적인 품질과 신뢰</h3>
             <p className="text-stone-600 leading-relaxed">
@@ -78,9 +78,9 @@ export default function Home() {
           </div>
 
           {/* 카드 3 */}
-          <div className="bg-white p-10 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-100 hover:border-red-200 hover:shadow-2xl transition-all duration-300 group">
-            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-red-700 transition-all duration-300">
-              <LightBulbIcon className="w-7 h-7 text-red-700 group-hover:text-white transition-colors" />
+          <div className="bg-white p-10 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-100 hover:border-blue-200 hover:shadow-2xl transition-all duration-300 group">
+            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-700 transition-all duration-300">
+              <LightBulbIcon className="w-7 h-7 text-blue-700 group-hover:text-white transition-colors" />
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-4">지속적인 가치 창조</h3>
             <p className="text-stone-600 leading-relaxed">
@@ -95,12 +95,12 @@ export default function Home() {
       </section>
 
       {/* 3. 간단한 Call to Action 배너 */}
-      <section className="w-full bg-red-50 py-20 mb-12 rounded-3xl max-w-6xl mx-auto px-6 text-center border border-red-100">
+      <section className="w-full bg-blue-50 py-20 mb-12 rounded-3xl max-w-6xl mx-auto px-6 text-center border border-blue-100">
         <h2 className="text-3xl font-bold text-stone-900 mb-6 tracking-tight">에스이아이(주)의 비전을 확인해보세요</h2>
         <p className="text-lg text-stone-600 mb-8 max-w-2xl mx-auto">
           끊임없는 혁신과 도전으로 미래 산업을 선도하는 우리의 청사진을 소개합니다.
         </p>
-        <Link href="/vision" className="inline-flex items-center justify-center px-6 py-3 border-2 border-red-700 text-red-700 font-bold rounded-full hover:bg-red-700 hover:text-white transition-colors duration-300">
+        <Link href="/vision" className="inline-flex items-center justify-center px-6 py-3 border-2 border-blue-700 text-blue-700 font-bold rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">
           비전 페이지로 이동 &rarr;
         </Link>
       </section>

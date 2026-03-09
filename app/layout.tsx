@@ -15,10 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className="scroll-smooth">
-      <body className="bg-stone-50 text-stone-900 font-sans antialiased flex flex-col min-h-screen selection:bg-red-200 selection:text-red-900 overflow-x-hidden">
+      <body className="bg-stone-50 text-stone-900 font-sans antialiased flex flex-col min-h-screen selection:bg-blue-200 selection:text-blue-900 overflow-x-hidden">
         
         {/* 최상단 마이크로 유틸리티 바 (다크 버건디) */}
-        <div className="bg-red-950 text-red-50/80 text-xs py-2 px-6 hidden sm:block">
+        <div className="bg-blue-950 text-blue-50/80 text-xs py-2 px-6 hidden sm:block">
           <div className="max-w-6xl mx-auto flex justify-between items-center tracking-wide">
             <span>고품질 산업용 장비 및 특수 잉크 공급 전문기업</span>
             <div className="flex space-x-6">
@@ -69,9 +69,9 @@ export default function RootLayout({
             <div>
               <h3 className="text-white font-bold mb-6 tracking-wide">Quick Links</h3>
               <ul className="text-sm space-y-3">
-                <li><Link href="/profile" className="hover:text-red-400 transition-colors">기업현황</Link></li>
-                <li><Link href="/solutions/laser" className="hover:text-red-400 transition-colors">레이저 장비 솔루션</Link></li>
-                <li><Link href="/products/silkscreen" className="hover:text-red-400 transition-colors">특수 잉크 제품군</Link></li>
+                <li><Link href="/profile" className="hover:text-blue-400 transition-colors">기업현황</Link></li>
+                <li><Link href="/solutions/laser" className="hover:text-blue-400 transition-colors">레이저 장비 솔루션</Link></li>
+                <li><Link href="/products/silkscreen" className="hover:text-blue-400 transition-colors">특수 잉크 제품군</Link></li>
               </ul>
             </div>
           </div>

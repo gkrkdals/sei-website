@@ -7,7 +7,7 @@ export default function ElectronicInkPage() {
         
         {/* 페이지 헤더 */}
         <header className="mb-12 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
             <CpuChipIcon className="w-4 h-4" />
             <span>Products 3</span>
           </div>
@@ -21,15 +21,15 @@ export default function ElectronicInkPage() {
           <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-stone-200 inline-block w-full md:w-auto min-w-[50%]">
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-red-700 shrink-0"></span>
+                <span className="w-2 h-2 rounded-full bg-blue-700 shrink-0"></span>
                 <p className="text-xl text-stone-800 font-bold tracking-wide">멤브레인 스위치</p>
               </li>
               <li className="flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-red-700 shrink-0"></span>
+                <span className="w-2 h-2 rounded-full bg-blue-700 shrink-0"></span>
                 <p className="text-xl text-stone-800 font-bold tracking-wide">RFID 안테나 인쇄</p>
               </li>
               <li className="flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-red-700 shrink-0"></span>
+                <span className="w-2 h-2 rounded-full bg-blue-700 shrink-0"></span>
                 <p className="text-xl text-stone-800 font-bold tracking-wide">각종 인쇄 센서.</p>
               </li>
             </ul>

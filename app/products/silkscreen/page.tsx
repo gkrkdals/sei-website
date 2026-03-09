@@ -7,7 +7,7 @@ export default function SilkscreenInkPage() {
         
         {/* 페이지 헤더 */}
         <header className="mb-16 md:mb-20 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
             <BeakerIcon className="w-4 h-4" />
             <span>Products 1</span>
           </div>
@@ -18,8 +18,8 @@ export default function SilkscreenInkPage() {
 
         {/* --- 1번 문단: 보안용 특수잉크 --- */}
         <section className="mb-24">
-          <div className="flex items-center gap-3 mb-8 border-b-2 border-red-900 pb-4">
-            <ShieldCheckIcon className="w-8 h-8 text-red-800" />
+          <div className="flex items-center gap-3 mb-8 border-b-2 border-blue-900 pb-4">
+            <ShieldCheckIcon className="w-8 h-8 text-blue-800" />
             <h2 className="text-3xl font-bold text-stone-900">
               보안용 특수잉크
             </h2>
@@ -46,7 +46,7 @@ export default function SilkscreenInkPage() {
                       <p className="text-stone-700 font-medium">다양한 색상의 발광잉크 생산 중</p>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-700 mt-2.5 shrink-0"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-700 mt-2.5 shrink-0"></span>
                       <p className="text-stone-900 font-bold">조폐공사 기술연구원에서 자사 빨간색 UV발광 잉크사용</p>
                     </li>
                   </ul>
@@ -69,7 +69,7 @@ export default function SilkscreenInkPage() {
                       <p className="text-stone-700 font-medium">한국조폐공사 카드부 공무원증에 자사의 잉크 적용검토 중</p>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-700 mt-2.5 shrink-0"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-700 mt-2.5 shrink-0"></span>
                       <p className="text-stone-900 font-bold">한국산업은행 사원증에 자사잉크 적용</p>
                     </li>
                   </ul>
@@ -88,7 +88,7 @@ export default function SilkscreenInkPage() {
                       <p className="text-stone-700 font-medium">태양광 아래서는 같은색으로 보이나 인조광 아래서는 다른색으로 보이는 보안기능 특수잉크</p>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-700 mt-2.5 shrink-0"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-700 mt-2.5 shrink-0"></span>
                       <p className="text-stone-900 font-bold">조폐공사 기술연구원에서 시험평가 중</p>
                     </li>
                   </ul>
@@ -156,8 +156,8 @@ export default function SilkscreenInkPage() {
 
         {/* --- 2번 문단: 기타잉크 --- */}
         <section>
-          <div className="flex items-center gap-3 mb-8 border-b-2 border-red-900 pb-4">
-            <DocumentPlusIcon className="w-8 h-8 text-red-800" />
+          <div className="flex items-center gap-3 mb-8 border-b-2 border-blue-900 pb-4">
+            <DocumentPlusIcon className="w-8 h-8 text-blue-800" />
             <h2 className="text-3xl font-bold text-stone-900">
               기타잉크
             </h2>
@@ -167,7 +167,7 @@ export default function SilkscreenInkPage() {
             
             {/* 1. IRB 적외선차단 잉크 */}
             <div className="bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col md:flex-row overflow-hidden hover:shadow-md transition-shadow">
-              <div className="md:w-56 bg-gradient-to-br from-amber-600 to-orange-600 text-white p-6 flex items-center justify-center text-center shrink-0">
+              <div className="md:w-56 bg-gradient-to-br from-amber-600 to-yellow-600 text-white p-6 flex items-center justify-center text-center shrink-0">
                 <h3 className="text-lg font-bold tracking-wide">IRB <br/> 적외선차단 잉크</h3>
               </div>
               <div className="p-6 md:p-8 flex-1 flex items-center">
@@ -177,7 +177,7 @@ export default function SilkscreenInkPage() {
                     <p className="text-stone-700 font-medium">투명 또는 반투명</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-red-700 mt-2.5 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-700 mt-2.5 shrink-0"></span>
                     <p className="text-stone-900 font-bold">신용카드 제조를 위해서 필수적으로 사용</p>
                   </li>
                   <li className="flex items-start gap-3">
@@ -190,13 +190,13 @@ export default function SilkscreenInkPage() {
 
             {/* 2. Haptic 잉크 */}
             <div className="bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col md:flex-row overflow-hidden hover:shadow-md transition-shadow">
-              <div className="md:w-56 bg-gradient-to-br from-orange-500 to-orange-600 text-white p-6 flex items-center justify-center text-center shrink-0">
+              <div className="md:w-56 bg-gradient-to-br from-yellow-500 to-yellow-600 text-white p-6 flex items-center justify-center text-center shrink-0">
                 <h3 className="text-lg font-bold tracking-wide">Haptic 잉크</h3>
               </div>
               <div className="p-6 md:p-8 flex-1 flex items-center">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-red-700 mt-2.5 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-700 mt-2.5 shrink-0"></span>
                     <p className="text-stone-900 font-bold">보이는 것 뿐만 아니라 질감까지 표현하는 특수 잉크</p>
                   </li>
                 </ul>
@@ -205,7 +205,7 @@ export default function SilkscreenInkPage() {
 
             {/* 3. 기 타 */}
             <div className="bg-white rounded-2xl shadow-sm border border-stone-100 flex flex-col md:flex-row overflow-hidden hover:shadow-md transition-shadow">
-              <div className="md:w-56 bg-gradient-to-br from-orange-600 to-amber-700 text-white p-6 flex items-center justify-center text-center shrink-0">
+              <div className="md:w-56 bg-gradient-to-br from-yellow-600 to-amber-700 text-white p-6 flex items-center justify-center text-center shrink-0">
                 <h3 className="text-lg font-bold tracking-wide">기 타</h3>
               </div>
               <div className="p-6 md:p-8 flex-1 flex items-center">

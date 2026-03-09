@@ -7,7 +7,7 @@ export default function LocationPage() {
         
         {/* 페이지 헤더 */}
         <header className="mb-16 md:mb-20 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
             <MapIcon className="w-4 h-4" />
             <span>Location</span>
           </div>
@@ -20,7 +20,7 @@ export default function LocationPage() {
         <div className="flex flex-col lg:flex-row gap-10">
           
           {/* 왼쪽: 지도 이미지 및 대중교통 안내 */}
-          <div className="flex-1 bg-white rounded-3xl shadow-xl shadow-red-950/5 border border-stone-100 overflow-hidden flex flex-col">
+          <div className="flex-1 bg-white rounded-3xl shadow-xl shadow-blue-950/5 border border-stone-100 overflow-hidden flex flex-col">
             
             {/* 지도 이미지 영역 (Placeholder) */}
             <div className="w-full aspect-[4/3] md:aspect-[16/9] bg-stone-200 relative group overflow-hidden border-b border-stone-100 flex items-center justify-center">
@@ -43,9 +43,9 @@ export default function LocationPage() {
           <div className="w-full lg:w-96 flex flex-col gap-6 shrink-0">
             
             {/* 주소 카드 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col gap-4 hover:border-red-200 hover:shadow-md transition-all">
-              <div className="w-14 h-14 bg-red-50 rounded-full flex items-center justify-center mb-2">
-                <MapPinIcon className="w-7 h-7 text-red-700" />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col gap-4 hover:border-blue-200 hover:shadow-md transition-all">
+              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-2">
+                <MapPinIcon className="w-7 h-7 text-blue-700" />
               </div>
               <h2 className="text-2xl font-bold text-stone-900">주소</h2>
               <p className="text-lg text-stone-700 font-medium leading-relaxed break-keep">
@@ -54,9 +54,9 @@ export default function LocationPage() {
             </div>
 
             {/* 연락처 카드 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col gap-4 hover:border-red-200 hover:shadow-md transition-all">
-              <div className="w-14 h-14 bg-red-50 rounded-full flex items-center justify-center mb-2">
-                <PhoneIcon className="w-7 h-7 text-red-700" />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col gap-4 hover:border-blue-200 hover:shadow-md transition-all">
+              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-2">
+                <PhoneIcon className="w-7 h-7 text-blue-700" />
               </div>
               <h2 className="text-2xl font-bold text-stone-900">연락처</h2>
               <div className="space-y-4 mt-2">
