@@ -26,10 +26,10 @@ export default function Home() {
           <span className="inline-block py-1 px-3 rounded-full bg-blue-800/50 border border-blue-700 text-blue-100 text-sm font-semibold tracking-wider mb-6">
             WELCOME TO SEI CORPORATION
           </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
-            창조의 의미와 <br />
+          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-8 leading-tight">
+            첨단 정밀 기술•제품과 <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">
-              가치가 있는 기업
+              신뢰를 연결하는 <br className="md:hidden" /> 글로벌 파트너
             </span>
           </h1>
           <p className="text-lg md:text-xl text-blue-50/80 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
@@ -40,7 +40,7 @@ export default function Home() {
             <Link href="/profile" className="px-8 py-4 bg-white text-blue-950 font-bold text-sm rounded-full hover:bg-stone-50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
               기업 현황 보기
             </Link>
-            <Link href="/solutions/laser" className="px-8 py-4 bg-blue-800/40 text-white font-bold text-sm rounded-full border border-blue-700 hover:bg-blue-700/50 transition-all duration-300 backdrop-blur-sm">
+            <Link href="/solutions/automotive" className="px-8 py-4 bg-blue-800/40 text-white font-bold text-sm rounded-full border border-blue-700 hover:bg-blue-700/50 transition-all duration-300 backdrop-blur-sm">
               솔루션 둘러보기
             </Link>
           </div>
@@ -58,9 +58,9 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-4">글로벌 라이선스 파트너십</h3>
             <p className="text-stone-600 leading-relaxed">
-              세계적 기술력을 가진 <strong className='text-stone-900 font-semibold'>스위스 Print Color Screen Ltd,
-              TECA-PRINT , 독일의 Spaleck Oberflächentechnik, Lang-Laser,
-              Economa, 미국의 Stardust</strong> 등과 라이선스 계약을 통해 국내
+              세계적 기술력을 가진 <strong className='text-stone-900 font-semibold'>스위스 Printcolor AG(잉크),
+              Teca-Print(패드인쇄기), 독일의 Inorcoat(PVD코팅장비) Spaleck Oberflächentechnik, Lang Laser, 
+              미국의 Stardust</strong> 등과 라이선스 계약을 통해 국내
               판권을 점유하고 있으며, 고품질의 창의적인 제품을 국내 대기업
               및 공공기관에 공급하고 있습니다.
             </p>

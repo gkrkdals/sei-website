@@ -39,7 +39,7 @@ export default function ProfilePage() {
             기업 현황
           </h1>
           <p className="mt-6 text-xl text-stone-600 max-w-3xl leading-relaxed">
-            창조의 의미와 가치를 바탕으로 글로벌 시장을 선도하는<br className="hidden md:block" /> 
+            첨단 정밀 기술•제품과 신뢰를 바탕으로 글로벌 시장을 선도하는<br className="hidden md:block" /> 
             에스이아이(주)의 핵심 정보를 소개합니다.
           </p>
         </header>
@@ -114,8 +114,9 @@ export default function ProfilePage() {
               label="License"
             >
               <ul className="list-disc list-outside pl-5 space-y-2 text-stone-700">
-                <li>스위스 Print Color Screen Ltd, Teca-Print AG 국내 독점대리점</li>
-                <li>독일 Spaleck Oberflächentechnik, Lang Laser-system GmbH, Economa Engineering GmbH 국내 독점대리점</li>
+                <li>스위스 Print Color Screen Ltd, Teca-Print AG, DynamicElement AG 국내 독점대리점</li>
+                <li>독일 ANDRITZ Gräbener, AuVerin, Inocoat, Spaleck Oberflächentechnik, Lang Laser-system GmbH 국내 독점대리점</li>
+                <li>미국 Stardust Inc. 국내 독점대리점</li>
                 <li>중국 Golden Materials film제품 국내 독점대리점</li>
               </ul>
             </InfoRow>

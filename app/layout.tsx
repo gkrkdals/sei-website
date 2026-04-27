@@ -5,7 +5,7 @@ import Header from './Header'; // 방금 만든 헤더 컴포넌트 불러오기
 
 export const metadata = {
   title: 'SEI Corporation | 글로벌 가치 창조 기업',
-  description: '창조의 의미와 가치가 있는 기업, 에스이아이(주)',
+  description: '첨단 정밀 기술•제품과 신뢰를 연결하는 글로벌 파트너, 에스이아이(주)',
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
         {/* 최상단 마이크로 유틸리티 바 (다크 버건디) */}
         <div className="bg-blue-950 text-blue-50/80 text-xs py-2 px-6 hidden sm:block">
           <div className="max-w-6xl mx-auto flex justify-between items-center tracking-wide">
-            <span>고품질 산업용 장비 및 특수 잉크 공급 전문기업</span>
+            <span>장비, 특수 잉크 및 필름</span>
             <div className="flex space-x-6">
               <span className="flex items-center gap-1"><PhoneIcon className="w-3 h-3"/> 010-3122-1428</span>
               <Link href="/location" className="flex items-center gap-1 hover:text-white transition-colors">
@@ -70,7 +70,7 @@ export default function RootLayout({
               <h3 className="text-white font-bold mb-6 tracking-wide">Quick Links</h3>
               <ul className="text-sm space-y-3">
                 <li><Link href="/profile" className="hover:text-blue-400 transition-colors">기업현황</Link></li>
-                <li><Link href="/solutions/laser" className="hover:text-blue-400 transition-colors">레이저 장비 솔루션</Link></li>
+                <li><Link href="/solutions/automotive" className="hover:text-blue-400 transition-colors">자동차산업</Link></li>
                 <li><Link href="/products/silkscreen" className="hover:text-blue-400 transition-colors">특수 잉크 제품군</Link></li>
               </ul>
             </div>

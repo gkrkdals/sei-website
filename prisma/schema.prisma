@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+// 에스이아이(주) 제품 테이블
+model Product {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique // URL 경로 (예: silkscreen)
+  title       String   // 메뉴 이름
+  description String   @db.Text // 에디터 본문 (HTML 및 이미지 태그 포함)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
