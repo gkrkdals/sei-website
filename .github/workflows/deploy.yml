@@ -44,7 +44,7 @@ jobs:
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: ${{ secrets.SERVER_PASSWORD }}
           # 🌟 서버에서 실행할 명령어 (록키 리눅스의 docker compose 띄어쓰기 문법 적용)
           script: |
             cd /home/devuser/sei-app 
