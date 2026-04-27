@@ -48,6 +48,6 @@ jobs:
           # 🌟 서버에서 실행할 명령어 (록키 리눅스의 docker compose 띄어쓰기 문법 적용)
           script: |
             cd /home/devuser/sei-app 
-            sudo docker compose pull
-            sudo docker compose up -d
-            sudo docker image prune -f
+            docker compose pull
+            docker compose up -d
+            docker image prune -f
