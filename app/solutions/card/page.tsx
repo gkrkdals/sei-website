@@ -149,7 +149,7 @@ export default function CardFilmPage() {
               <div className="w-full lg:w-2/5 flex flex-col gap-4">
                 <div className="bg-[#f1ede6] dark:bg-slate-700 p-8 rounded-2xl border border-stone-200/30 dark:border-slate-600/30 flex-1">
                   <h4 className="text-[#4b6a46] dark:text-emerald-300 font-bold text-lg mb-3">공급 소재</h4>
-                  <p className="text-stone-600 text-[0.95rem] leading-relaxed">
+                  <p className="text-stone-600 dark:text-stone-300 text-[0.95rem] leading-relaxed">
                     PVC, rPVC, PET, PETG, PC 기반의 카드 전용 필름으로 카드 구조와 용도에 맞는 소재 구성이 가능합니다.
                   </p>
                 </div>
