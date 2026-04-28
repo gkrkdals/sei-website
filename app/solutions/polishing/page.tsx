@@ -2,7 +2,7 @@ import { Cog8ToothIcon, ArrowRightIcon, ArrowDownIcon } from '@heroicons/react/2
 
 export default function PolishingSolutionPage() {
   return (
-    <div className="w-full bg-stone-50/30 dark:bg-slate-950 py-16 md:py-24">
+    <div className="w-full bg-stone-50/30 dark:bg-slate-950 py-16 md:py-24 pt-20 md:pt-0">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* 페이지 헤더 */}
@@ -38,7 +38,7 @@ export default function PolishingSolutionPage() {
               <li className="flex items-start gap-4">
                 <span className="flex-shrink-0 w-2 h-2 mt-2.5 rounded-full bg-blue-700 dark:bg-blue-400"></span>
                 <p className="text-lg lg:text-xl text-stone-800 dark:text-stone-300 leading-relaxed font-medium break-keep">
-                  <strong className="text-stone-950 font-bold border-b-2 border-blue-200">원심력을 이용한 연마(광택)기 제품의 시초</strong>로써, 다양한 제품 (금,은 주화, 골프공, 각종 부품등)의 연마기 공급 중.
+                  <strong className="text-stone-950 font-bold border-b-2 border-blue-200 dark:text-stone-300">원심력을 이용한 연마(광택)기 제품의 시초</strong>로써, 다양한 제품 (금,은 주화, 골프공, 각종 부품등)의 연마기 공급 중.
                 </p>
               </li>
             </ul>

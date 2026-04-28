@@ -36,7 +36,7 @@ export default function RootLayout({
         <Header />
 
         {/* 메인 콘텐츠 영역 */}
-        <main className="flex-grow w-full flex flex-col mt-20 md:mt-0">
+        <main className="flex-grow w-full flex flex-col">
           {children}
         </main>
 

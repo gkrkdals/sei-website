@@ -2,7 +2,7 @@ import { PrinterIcon, ArrowRightIcon, ArrowDownIcon } from '@heroicons/react/24/
 
 export default function PadPrintingSolutionPage() {
   return (
-    <div className="w-full bg-stone-50/30 dark:bg-slate-950 py-16 md:py-24">
+    <div className="w-full bg-stone-50/30 dark:bg-slate-950 py-16 md:py-24 pt-20 md:pt-0">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* 페이지 헤더 */}

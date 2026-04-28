@@ -3,7 +3,7 @@ import ScrollButton from './ScrollButton';
 
 export default function CardFilmPage() {
   return (
-    <div className="w-full bg-stone-50/30 dark:bg-slate-950">
+    <div className="w-full bg-stone-50/30 dark:bg-slate-950 pt-20 md:pt-0">
       
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[650px] overflow-hidden">
@@ -11,7 +11,7 @@ export default function CardFilmPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#d7c6af] via-[#ceb79c] to-[#b99f83] dark:from-[#3f3a31] dark:via-[#2a2520] dark:to-[#1a1410] z-0" />
         <div className="absolute inset-0 bg-black/20 dark:bg-black/40 z-10" />
         
-        <div className="relative z-20 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center pt-10 pb-10 md:pt-5 md:pb-5">
+        <div className="relative z-20 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center">
           <div className="inline-block px-4 py-1.5 bg-white shadow-lg border border-white/20 rounded-full text-[#173f97] text-xs md:text-sm font-bold mb-6 w-fit tracking-wider">
             CARD FILM SOLUTIONS
           </div>
