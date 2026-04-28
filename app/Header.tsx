@@ -48,7 +48,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 bg-white dark:bg-stone-900 z-50 border-b border-stone-200 dark:border-stone-800 shadow-sm transition-all">
+    <header className="fixed top-0 left-0 right-0 w-full bg-white/10 dark:bg-stone-900/10 backdrop-blur-md z-50 border-transparent transition-all">
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between relative">
         
         {/* 로고 */}
@@ -60,17 +60,17 @@ export default function Header() {
         <nav className="hidden md:flex space-x-10 h-full">
           {/* 1. 회사 소개 */}
           <div className="group relative h-full flex items-center">
-            <span className="cursor-pointer font-bold text-stone-700 dark:text-stone-300 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">회사 소개</span>
+            <span className="cursor-pointer font-bold text-stone-500 dark:text-stone-300 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">회사 소개</span>
             <div className="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-white dark:bg-stone-800 border border-stone-100 dark:border-stone-700 shadow-2xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-2 overflow-hidden z-50 p-2">
-              <Link href="/" className="block px-4 py-3 hover:bg-blue-50 dark:hover:bg-stone-700 hover:text-blue-700 text-sm font-medium rounded-xl transition-colors text-stone-700 dark:text-stone-300">회사소개</Link>
-              <Link href="/profile" className="block px-4 py-3 hover:bg-blue-50 dark:hover:bg-stone-700 hover:text-blue-700 text-sm font-medium rounded-xl transition-colors text-stone-700 dark:text-stone-300">기업현황</Link>
-              <Link href="/vision" className="block px-4 py-3 hover:bg-blue-50 dark:hover:bg-stone-700 hover:text-blue-700 text-sm font-medium rounded-xl transition-colors text-stone-700 dark:text-stone-300">비전</Link>
+              <Link href="/" className="block px-4 py-3 hover:bg-blue-50 dark:hover:bg-stone-700 hover:text-blue-700 text-sm font-medium rounded-xl transition-colors text-stone-500 dark:text-stone-300">회사소개</Link>
+              <Link href="/profile" className="block px-4 py-3 hover:bg-blue-50 dark:hover:bg-stone-700 hover:text-blue-700 text-sm font-medium rounded-xl transition-colors text-stone-500 dark:text-stone-300">기업현황</Link>
+              <Link href="/vision" className="block px-4 py-3 hover:bg-blue-50 dark:hover:bg-stone-700 hover:text-blue-700 text-sm font-medium rounded-xl transition-colors text-stone-500 dark:text-stone-300">비전</Link>
             </div>
           </div>
 
           {/* 2. 솔루션 소개 */}
           <div className="group relative h-full flex items-center">
-            <span className="cursor-pointer font-bold text-stone-700 dark:text-stone-300 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">솔루션 소개</span>
+            <span className="cursor-pointer font-bold text-stone-500 dark:text-stone-300 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">솔루션 소개</span>
             <div className="absolute top-full left-1/2 -translate-x-1/2 w-[900px] bg-white dark:bg-stone-800 border border-stone-100 dark:border-stone-700 shadow-2xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-2 overflow-hidden z-50 p-7">
               <div className="grid grid-cols-5 gap-5">
                 {[
@@ -88,7 +88,7 @@ export default function Header() {
                         className="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500"
                       />
                     </div>
-                    <span className="text-sm font-bold text-stone-700 dark:text-stone-300 group-hover/item:text-blue-700 dark:group-hover/item:text-blue-400 text-center transition-colors">
+                    <span className="text-sm font-bold text-stone-500 dark:text-stone-300 group-hover/item:text-blue-700 dark:group-hover/item:text-blue-400 text-center transition-colors">
                       {item.label}
                     </span>
                   </Link>
@@ -99,7 +99,7 @@ export default function Header() {
 
           {/* 🌟 3. 제품 소개 (DB 연동 동적 렌더링) */}
           <div className="group relative h-full flex items-center">
-            <span className="cursor-pointer font-bold text-stone-700 dark:text-stone-300 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">제품 소개</span>
+            <span className="cursor-pointer font-bold text-stone-500 dark:text-stone-300 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">제품 소개</span>
             <div className="absolute top-full left-1/2 -translate-x-1/2 w-64 bg-white dark:bg-stone-800 border border-stone-100 dark:border-stone-700 shadow-2xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-2 overflow-hidden z-50 p-2">
               
               {/* DB에 데이터가 없을 때의 안내 문구 */}
@@ -111,7 +111,7 @@ export default function Header() {
                   <Link 
                     key={product.id} 
                     href={`/products/${product.slug}`} 
-                    className="block px-4 py-3 hover:bg-blue-50 dark:hover:bg-stone-700 hover:text-blue-700 text-sm font-medium rounded-xl transition-colors text-stone-700 dark:text-stone-300"
+                    className="block px-4 py-3 hover:bg-blue-50 dark:hover:bg-stone-700 hover:text-blue-700 text-sm font-medium rounded-xl transition-colors text-stone-500 dark:text-stone-300"
                   >
                     {product.title}
                   </Link>
@@ -123,7 +123,7 @@ export default function Header() {
 
           {/* 4. 오시는 길 */}
           <div className="flex items-center">
-            <Link href="/location" className="font-bold text-stone-700 dark:text-stone-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors">오시는 길</Link>
+            <Link href="/location" className="font-bold text-stone-500 dark:text-stone-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors">오시는 길</Link>
           </div>
         </nav>
 
@@ -166,12 +166,12 @@ export default function Header() {
           
           {/* 모바일 1. 회사 소개 (아코디언) */}
           <div className="border-b border-stone-100 dark:border-stone-700 py-2">
-            <button onClick={() => toggleAccordion('company')} className="w-full flex justify-between items-center text-lg font-bold text-stone-800 dark:text-stone-200">
+            <button onClick={() => toggleAccordion('company')} className="w-full flex justify-between items-center text-lg font-bold text-stone-600 dark:text-stone-200">
               회사 소개
               <ChevronDownIcon className={`w-5 h-5 transition-transform duration-300 ${openAccordion === 'company' ? 'rotate-180 text-blue-700 dark:text-blue-400' : 'text-stone-400 dark:text-stone-500'}`} />
             </button>
             <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openAccordion === 'company' ? 'max-h-48 mt-4' : 'max-h-0'}`}>
-              <div className="flex flex-col pl-4 gap-3 border-l-2 border-blue-100 dark:border-blue-900 text-stone-600 dark:text-stone-400 font-medium pb-2">
+              <div className="flex flex-col pl-4 gap-3 border-l-2 border-blue-100 dark:border-blue-900 text-stone-400 dark:text-stone-400 font-medium pb-2">
                 <Link href="/" className="hover:text-blue-700 dark:hover:text-blue-400 block">회사소개</Link>
                 <Link href="/profile" className="hover:text-blue-700 dark:hover:text-blue-400 block">기업현황</Link>
                 <Link href="/vision" className="hover:text-blue-700 dark:hover:text-blue-400 block">비전</Link>
@@ -181,12 +181,12 @@ export default function Header() {
 
           {/* 모바일 2. 솔루션 소개 (아코디언) */}
           <div className="border-b border-stone-100 dark:border-stone-700 py-2">
-            <button onClick={() => toggleAccordion('solutions')} className="w-full flex justify-between items-center text-lg font-bold text-stone-800 dark:text-stone-200">
+            <button onClick={() => toggleAccordion('solutions')} className="w-full flex justify-between items-center text-lg font-bold text-stone-600 dark:text-stone-200">
               솔루션 소개
               <ChevronDownIcon className={`w-5 h-5 transition-transform duration-300 ${openAccordion === 'solutions' ? 'rotate-180 text-blue-700 dark:text-blue-400' : 'text-stone-400 dark:text-stone-500'}`} />
             </button>
             <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openAccordion === 'solutions' ? 'max-h-64 mt-4' : 'max-h-0'}`}>
-              <div className="flex flex-col pl-4 gap-3 border-l-2 border-blue-100 dark:border-blue-900 text-stone-600 dark:text-stone-400 font-medium pb-2">
+              <div className="flex flex-col pl-4 gap-3 border-l-2 border-blue-100 dark:border-blue-900 text-stone-400 dark:text-stone-400 font-medium pb-2">
                 <Link href="/solutions/automotive" className="hover:text-blue-700 dark:hover:text-blue-400 block">자동차산업</Link>
                 <Link href="/solutions/card" className="hover:text-blue-700 dark:hover:text-blue-400 block">신용카드 및 ID카드</Link>
                 <Link href="/solutions/pad-printing" className="hover:text-blue-700 dark:hover:text-blue-400 block">인쇄산업</Link>
@@ -198,12 +198,12 @@ export default function Header() {
 
           {/* 🌟 모바일 3. 제품 소개 (DB 연동 동적 렌더링) */}
           <div className="border-b border-stone-100 dark:border-stone-700 py-2">
-            <button onClick={() => toggleAccordion('products')} className="w-full flex justify-between items-center text-lg font-bold text-stone-800 dark:text-stone-200">
+            <button onClick={() => toggleAccordion('products')} className="w-full flex justify-between items-center text-lg font-bold text-stone-600 dark:text-stone-200">
               제품 소개
               <ChevronDownIcon className={`w-5 h-5 transition-transform duration-300 ${openAccordion === 'products' ? 'rotate-180 text-blue-700 dark:text-blue-400' : 'text-stone-400 dark:text-stone-500'}`} />
             </button>
             <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openAccordion === 'products' ? 'max-h-48 mt-4' : 'max-h-0'}`}>
-              <div className="flex flex-col pl-4 gap-3 border-l-2 border-blue-100 dark:border-blue-900 text-stone-600 dark:text-stone-400 font-medium pb-2">
+              <div className="flex flex-col pl-4 gap-3 border-l-2 border-blue-100 dark:border-blue-900 text-stone-400 dark:text-stone-400 font-medium pb-2">
                 
                 {/* DB 데이터 매핑 */}
                 {dbProducts.length === 0 ? (
@@ -226,7 +226,7 @@ export default function Header() {
 
           {/* 모바일 4. 오시는 길 (직접 링크) */}
           <div className="py-2 border-stone-100 dark:border-stone-700">
-            <Link href="/location" className="block text-lg font-bold text-stone-800 dark:text-stone-200 hover:text-blue-700 transition-colors">
+            <Link href="/location" className="block text-lg font-bold text-stone-600 dark:text-stone-200 hover:text-blue-700 transition-colors">
               오시는 길
             </Link>
           </div>

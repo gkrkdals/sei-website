@@ -20,7 +20,7 @@ export default function RootLayout({
         <Providers>
         
           {/* 최상단 마이크로 유틸리티 바 */}
-          <div className="bg-blue-950 dark:bg-stone-900 text-blue-50/80 text-xs py-2 px-6 hidden sm:block transition-colors">
+          {/* <div className="bg-blue-950 dark:bg-stone-900 text-blue-50/80 text-xs py-2 px-6 hidden sm:block transition-colors">
           <div className="max-w-6xl mx-auto flex justify-between items-center tracking-wide">
             <span>장비, 특수 잉크 및 필름</span>
             <div className="flex space-x-6">
@@ -30,7 +30,7 @@ export default function RootLayout({
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* 여기서 클라이언트 컴포넌트인 Header를 렌더링합니다 */}
         <Header />

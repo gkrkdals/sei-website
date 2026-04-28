@@ -6,7 +6,7 @@ export default function Home() {
     <div className="w-full flex flex-col items-center md:flex md:flex-col mobile-fullscreen-sections">
       
       {/* 1. 히어로(Hero) 섹션: 다크 버건디/브라운 톤 */}
-      <section className="w-full relative md:h-[calc(100vh-113px)] bg-blue-950 dark:bg-slate-950 text-white overflow-hidden mobile-fullscreen-section">
+      <section className="w-full relative md:h-screen bg-blue-950 dark:bg-slate-950 text-white overflow-hidden mobile-fullscreen-section">
         {/* [NEW] 무저작권 비즈니스 비디오 배경, object-cover 유지 */}
         {/* [수정됨] img 태그를 video 태그로 교체, autoPlay, loop, muted 설정 */}
         <video 
