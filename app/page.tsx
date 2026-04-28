@@ -3,24 +3,28 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col items-center md:block mobile-fullscreen-sections">
+    <div className="w-full flex flex-col items-center md:flex md:flex-col mobile-fullscreen-sections">
       
       {/* 1. 히어로(Hero) 섹션: 다크 버건디/브라운 톤 */}
-      <section className="w-full relative md:py-24 md:relative bg-blue-950 dark:bg-slate-950 text-white overflow-hidden mobile-fullscreen-section">
-        {/* [NEW] 무저작권 비즈니스 사진 배경, 버건디 틴트 적용 */}
-        {/* [수정됨] 믹스블렌드를 빼고 투명도를 50%로 설정하여 사진 본연의 형태가 잘 보이게 함 */}
-        <img 
-          src="/images/hero-business.png" 
-          alt="Business Collaboration" 
-          className="absolute inset-0 w-full h-full object-cover opacity-50 dark:opacity-25 z-0" 
-        />
+      <section className="w-full relative md:h-[calc(100vh-113px)] bg-blue-950 dark:bg-slate-950 text-white overflow-hidden mobile-fullscreen-section">
+        {/* [NEW] 무저작권 비즈니스 비디오 배경, object-cover 유지 */}
+        {/* [수정됨] img 태그를 video 태그로 교체, autoPlay, loop, muted 설정 */}
+        <video 
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-50 z-0"
+        >
+          <source src="/videos/herovid.mp4" type="video/mp4" />
+        </video>
         
         {/* [수정됨] 통째로 90%로 덮던 방식을 버리고, 색상 자체에 투명도(/80, /60, /40)를 주어 사진이 은은하게 비치도록 그라데이션 조절 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/80 via-blue-900/60 to-yellow-900/40 dark:from-slate-950/90 dark:via-slate-900/80 dark:to-yellow-900/30 z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/80 via-blue-900/60 to-yellow-900/40 dark:from-slate-950/90 dark:via-slate-900/80 dark:to-yellow-900/30 z-0 hidden"></div>
 
         {/* 배경 장식용 원형 그래픽 (레이저/열기 느낌) */}
-        <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
-        <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob hidden"></div>
+        <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000 hidden"></div>
 
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center md:py-0 py-12 h-full flex flex-col items-center justify-center">
           <span className="inline-block py-1 px-3 rounded-full bg-blue-800/50 dark:bg-blue-900/50 border border-blue-700 dark:border-blue-600 text-blue-100 dark:text-blue-200 text-sm font-semibold tracking-wider mb-6">
@@ -103,8 +107,8 @@ export default function Home() {
       </section>
 
       {/* 데스크톱용: 3개 카드 그리드 레이아웃 */}
-      <section className="hidden md:block w-full max-w-6xl mx-auto px-6 py-24 -mt-10 relative z-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="hidden md:flex md:h-[calc(100vh-60px)] w-full items-center justify-center relative z-20">
+        <div className="max-w-6xl px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* 카드 1 */}
           <div className="bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-xl shadow-stone-200/50 dark:shadow-black/50 border border-stone-100 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-600 hover:shadow-2xl transition-all duration-300 group">
@@ -150,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* 5. Call to Action 배너 */}
-      <section className="flex items-center justify-center mobile-fullscreen-section md:mobile-fullscreen-section-content md:w-full md:bg-blue-50 md:dark:bg-slate-900 md:py-20 md:mb-12 md:rounded-3xl md:max-w-6xl md:mx-auto md:px-6 md:text-center md:border md:border-blue-100 md:dark:border-slate-800">
+      <section className="flex items-center justify-center mobile-fullscreen-section md:mobile-fullscreen-section md:h-[calc(100vh-60px)] md:w-full md:bg-blue-50 md:dark:bg-slate-900 md:rounded-3xl md:text-center md:border md:border-blue-100 md:dark:border-slate-800">
         <div className="px-6 md:px-0 text-center">
           <h2 className="text-3xl font-bold text-stone-900 dark:text-white mb-6 tracking-tight">에스이아이(주)의 비전을 <br className='sm:hidden'/>확인해보세요</h2>
           <p className="text-lg text-stone-600 dark:text-stone-400 mb-8 max-w-2xl mx-auto">
