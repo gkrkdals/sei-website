@@ -3,7 +3,7 @@ import ScrollButton from './ScrollButton';
 
 export default function CardFilmPage() {
   return (
-    <div className="w-full bg-stone-50/30 dark:bg-slate-950 pt-20 md:pt-0">
+    <div className="w-full bg-stone-50/30 dark:bg-slate-950 pt-20">
       
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[650px] overflow-hidden">
@@ -84,6 +84,15 @@ export default function CardFilmPage() {
                   </p>
                 </div>
               ))}
+            </div>
+
+            {/* Wood Card Image Section */}
+            <div className="mt-16 rounded-[2rem] border-2 border-stone-200 dark:border-slate-600 overflow-hidden shadow-lg dark:shadow-black/30 bg-gradient-to-b from-stone-50 to-stone-100 dark:from-slate-700 dark:to-slate-800">
+              <img 
+                src="/images/solutions/woodcard.webp" 
+                alt="Wood Card Solutions" 
+                className="w-full h-auto object-contain aspect-video"
+              />
             </div>
           </section>
 

@@ -26,7 +26,7 @@ function InfoRow({ icon: Icon, label, value, children }: any) {
 
 export default function ProfilePage() {
   return (
-    <div className="w-full bg-stone-50/30 dark:bg-slate-950 py-16 md:py-24 pt-20 md:pt-0">
+    <div className="w-full bg-stone-50/30 dark:bg-slate-950 py-16 md:py-24 pt-20">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* 페이지 헤더 섹션: 세련된 타이포그래피 (버건디 톤) */}
