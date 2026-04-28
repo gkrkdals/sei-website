@@ -8,7 +8,7 @@ export default function CardFilmPage() {
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[650px] overflow-hidden">
         {/* Background Image Placeholder with Premium Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#d7c6af] via-[#ceb79c] to-[#b99f83] dark:from-[#3f3a31] dark:via-[#2a2520] dark:to-[#1a1410] z-0" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#d7c6af] via-[#ceb79c] to-[#b99f83] dark:from-slate-950 dark:via-slate-950 dark:to-slate-950 z-0" />
         <div className="absolute inset-0 bg-black/20 dark:bg-black/40 z-10" />
         
         <div className="relative z-20 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center">
@@ -69,7 +69,7 @@ export default function CardFilmPage() {
                   desc: "4개의 목재층과 1개의 종이층, 바이오 접착 기반 구조로 카드 본체의 95% 이상이 생분해성 소재로 구성됩니다."
                 },
                 {
-                  title: "프리미염 디자인 감성",
+                  title: "프리미엄 디자인 감성",
                   desc: "목재 특유의 결감과 질감으로 각 카드가 서로 다른 고유한 외관을 가지며 브랜드 차별화에 적합합니다."
                 },
                 {
@@ -78,7 +78,7 @@ export default function CardFilmPage() {
                 }
               ].map((item, idx) => (
                 <div key={idx} className="bg-stone-50/80 dark:bg-slate-700/50 rounded-3xl p-8 border border-stone-100 dark:border-slate-600 transition-all hover:scale-[1.02] hover:shadow-xl hover:bg-white dark:hover:bg-slate-700">
-                  <h3 className="text-amber-700 dark:text-amber-400 font-bold text-xl mb-4">{item.title}</h3>
+                  <h3 className="text-amber-700 dark:text-amber-400 font-bold text-lg mb-4">{item.title}</h3>
                   <p className="text-stone-600 dark:text-stone-400 text-base leading-relaxed break-keep">
                     {item.desc}
                   </p>
@@ -110,7 +110,7 @@ export default function CardFilmPage() {
                 }
               ].map((item, idx) => (
                 <div key={idx} className="bg-stone-50/80 dark:bg-slate-700/50 rounded-3xl p-8 border border-stone-100 dark:border-slate-600 transition-all hover:scale-[1.02] hover:shadow-xl hover:bg-white dark:hover:bg-slate-700">
-                  <h3 className="text-[#173f97] dark:text-blue-300 font-bold text-xl mb-4">{item.title}</h3>
+                  <h3 className="text-[#173f97] dark:text-blue-300 font-bold text-lg mb-4">{item.title}</h3>
                   <p className="text-stone-600 dark:text-stone-400 text-base leading-relaxed break-keep">
                     {item.desc}
                   </p>
