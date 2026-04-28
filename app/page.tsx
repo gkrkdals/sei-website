@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center md:block mobile-fullscreen-sections">
       
       {/* 1. 히어로(Hero) 섹션: 다크 버건디/브라운 톤 */}
-      <section className="w-full relative py-24 bg-blue-950 dark:bg-slate-950 text-white overflow-hidden">
+      <section className="w-full relative md:py-24 md:relative bg-blue-950 dark:bg-slate-950 text-white overflow-hidden mobile-fullscreen-section">
         {/* [NEW] 무저작권 비즈니스 사진 배경, 버건디 틴트 적용 */}
         {/* [수정됨] 믹스블렌드를 빼고 투명도를 50%로 설정하여 사진 본연의 형태가 잘 보이게 함 */}
         <img 
@@ -22,7 +22,7 @@ export default function Home() {
         <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
         <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
 
-        <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
+        <div className="max-w-5xl mx-auto px-6 relative z-10 text-center md:py-0 py-12 h-full flex flex-col items-center justify-center">
           <span className="inline-block py-1 px-3 rounded-full bg-blue-800/50 dark:bg-blue-900/50 border border-blue-700 dark:border-blue-600 text-blue-100 dark:text-blue-200 text-sm font-semibold tracking-wider mb-6">
             WELCOME TO SEI CORPORATION
           </span>
@@ -47,8 +47,63 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. 회사 소개 (1-1 문서 내용 반영) - 웜스톤 포인트 컬러 */}
-      <section className="w-full max-w-6xl mx-auto px-6 py-24 -mt-10 relative z-20">
+      {/* 2. 회사 소개 - 섹션 2: 글로벌 라이선스 파트너십 */}
+      <section className="w-full md:hidden md:max-w-6xl md:mx-auto md:px-6 md:py-24 md:-mt-10 relative md:z-20 md:mb-0 mb-0 mobile-fullscreen-section md:mobile-fullscreen-section-content">
+        <div className="h-full md:h-auto flex items-center justify-center md:block px-6 md:px-0">
+          {/* 카드 1 */}
+          <div className="bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-xl shadow-stone-200/50 dark:shadow-black/50 border border-stone-100 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-600 hover:shadow-2xl transition-all duration-300 group w-full md:w-auto">
+            <div className="w-14 h-14 bg-blue-50 dark:bg-blue-950 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-700 dark:group-hover:bg-blue-600 transition-all duration-300">
+              <GlobeAltIcon className="w-7 h-7 text-blue-700 dark:text-blue-400 group-hover:text-white transition-colors" />
+            </div>
+            <h3 className="text-xl font-bold text-stone-900 dark:text-white mb-4">글로벌 라이선스 파트너십</h3>
+            <p className="text-stone-600 dark:text-stone-400 leading-relaxed">
+              세계적 기술력을 가진 <strong className='text-stone-900 dark:text-white font-semibold'>스위스 Printcolor AG(잉크),
+              Teca-Print(패드인쇄기), 독일의 Inorcoat(PVD코팅장비) Spaleck Oberflächentechnik, Lang Laser, 
+              미국의 Stardust</strong> 등과 라이선스 계약을 통해 국내
+              판권을 점유하고 있으며, 고품질의 창의적인 제품을 국내 대기업
+              및 공공기관에 공급하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. 회사 소개 - 섹션 3: 압도적인 품질과 신뢰 */}
+      <section className="w-full md:hidden mobile-fullscreen-section">
+        <div className="h-full flex items-center justify-center px-6">
+          {/* 카드 2 */}
+          <div className="bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-xl shadow-stone-200/50 dark:shadow-black/50 border border-stone-100 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-600 hover:shadow-2xl transition-all duration-300 group w-full">
+            <div className="w-14 h-14 bg-blue-50 dark:bg-blue-950 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-700 dark:group-hover:bg-blue-600 transition-all duration-300">
+              <ShieldCheckIcon className="w-7 h-7 text-blue-700 dark:text-blue-400 group-hover:text-white transition-colors" />
+            </div>
+            <h3 className="text-xl font-bold text-stone-900 dark:text-white mb-4">압도적인 품질과 신뢰</h3>
+            <p className="text-stone-600 dark:text-stone-400 leading-relaxed">
+              앞선 기술력과 글로벌 네트워크를 바탕으로 경쟁력 있는 품질과 가격의 제품을 공급받고 있으며, <strong className="text-stone-900 dark:text-white font-semibold">안정적인 공급망 확보를 통해 납품 기한을 철저하게 준수</strong>하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. 회사 소개 - 섹션 4: 지속적인 가치 창조 */}
+      <section className="w-full md:hidden mobile-fullscreen-section">
+        <div className="h-full flex items-center justify-center px-6">
+          {/* 카드 3 */}
+          <div className="bg-white dark:bg-slate-800 p-10 rounded-3xl shadow-xl shadow-stone-200/50 dark:shadow-black/50 border border-stone-100 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-600 hover:shadow-2xl transition-all duration-300 group w-full">
+            <div className="w-14 h-14 bg-blue-50 dark:bg-blue-950 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-700 dark:group-hover:bg-blue-600 transition-all duration-300">
+              <LightBulbIcon className="w-7 h-7 text-blue-700 dark:text-blue-400 group-hover:text-white transition-colors" />
+            </div>
+            <h3 className="text-xl font-bold text-stone-900 dark:text-white mb-4">지속적인 가치 창조</h3>
+            <p className="text-stone-600 dark:text-stone-400 leading-relaxed">
+              앞으로도 '에스이아이㈜'는 경영자원의 효율적 운용을 바탕으로
+              핵심인력을 양성하여 당사의 사업전문성을 강화해나감으로써
+              대한민국을 대표하는 <strong className='text-stone-900 dark:text-white font-semibold'>진정한 글로벌 가치 창조 기업이</strong> 되도록
+              하겠습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 데스크톱용: 3개 카드 그리드 레이아웃 */}
+      <section className="hidden md:block w-full max-w-6xl mx-auto px-6 py-24 -mt-10 relative z-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* 카드 1 */}
@@ -94,15 +149,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. 간단한 Call to Action 배너 */}
-      <section className="w-full bg-blue-50 dark:bg-slate-900 py-20 mb-12 rounded-3xl max-w-6xl mx-auto px-6 text-center border border-blue-100 dark:border-slate-800">
-        <h2 className="text-3xl font-bold text-stone-900 dark:text-white mb-6 tracking-tight">에스이아이(주)의 비전을 확인해보세요</h2>
-        <p className="text-lg text-stone-600 dark:text-stone-400 mb-8 max-w-2xl mx-auto">
-          끊임없는 혁신과 도전으로 미래 산업을 선도하는 우리의 청사진을 소개합니다.
-        </p>
-        <Link href="/vision" className="inline-flex items-center justify-center px-6 py-3 border-2 border-blue-700 dark:border-blue-600 text-blue-700 dark:text-blue-400 font-bold rounded-full hover:bg-blue-700 dark:hover:bg-blue-600 hover:text-white dark:hover:text-white transition-colors duration-300">
-          비전 페이지로 이동 &rarr;
-        </Link>
+      {/* 5. Call to Action 배너 */}
+      <section className="flex items-center justify-center mobile-fullscreen-section md:mobile-fullscreen-section-content md:w-full md:bg-blue-50 md:dark:bg-slate-900 md:py-20 md:mb-12 md:rounded-3xl md:max-w-6xl md:mx-auto md:px-6 md:text-center md:border md:border-blue-100 md:dark:border-slate-800">
+        <div className="px-6 md:px-0 text-center">
+          <h2 className="text-3xl font-bold text-stone-900 dark:text-white mb-6 tracking-tight">에스이아이(주)의 비전을 <br className='sm:hidden'/>확인해보세요</h2>
+          <p className="text-lg text-stone-600 dark:text-stone-400 mb-8 max-w-2xl mx-auto">
+            끊임없는 혁신과 도전으로 미래 산업을 선도하는 우리의 청사진을 소개합니다.
+          </p>
+          <Link href="/vision" className="inline-flex items-center justify-center px-6 py-3 border-2 border-blue-700 dark:border-blue-600 text-blue-700 dark:text-blue-400 font-bold rounded-full hover:bg-blue-700 dark:hover:bg-blue-600 hover:text-white dark:hover:text-white transition-colors duration-300">
+            비전 페이지로 이동 &rarr;
+          </Link>
+        </div>
       </section>
 
     </div>

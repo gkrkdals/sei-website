@@ -3,3 +3,31 @@
 @import '../styles/_variables.scss';
 @import '../styles/_keyframe-animations.scss';
 @plugin "@tailwindcss/typography";
+
+/* 모바일 풀스크린 섹션 스크롤 애니메이션 */
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .mobile-fullscreen-sections {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  .mobile-fullscreen-section {
+    min-height: calc(100vh - 5rem);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-fullscreen-section-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

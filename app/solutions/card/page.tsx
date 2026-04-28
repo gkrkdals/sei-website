@@ -16,7 +16,7 @@ export default function CardFilmPage() {
             CARD FILM SOLUTIONS
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight leading-tight">
-            카드 전용 필름 솔루션
+            카드 전용 필름 <br className='sm:hidden'/>솔루션
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 font-medium">
             Card Film Solutions
