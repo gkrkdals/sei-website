@@ -26,7 +26,7 @@ export default function PolishingSolutionPage() {
             PVD 코팅 솔루션을 소개합니다. 높은 내마모성, 표면 품질, 공정 안정성을 바탕으로<br/>
             프리미엄 코팅 장비와 공정 기술을 제공합니다.
           </p>
-          <div className="flex flex-wrap gap-4">
+          {/* <div className="flex flex-wrap gap-4">
             <button className="px-8 py-3 bg-[#173f97] text-white font-bold rounded-xl shadow-xl hover:bg-[#1a4bb3] transition-colors text-lg">
               제품 문의
             </button>
@@ -35,7 +35,7 @@ export default function PolishingSolutionPage() {
               label="시스템 보기"
               className="px-8 py-3 bg-white/10 backdrop-blur-md border-2 border-white/90 text-white font-bold rounded-xl hover:bg-white/20 transition-colors text-lg"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 

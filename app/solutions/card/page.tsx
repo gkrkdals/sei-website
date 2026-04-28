@@ -26,7 +26,7 @@ export default function CardFilmPage() {
             친환경 우드 카드부터 PVC, rPVC, PET, PETG, PC 기반의 고기능 필름 소재까지,
             White Core, Transparent Core, Overlay, 레이저 각인용 Overlay 등 국내 카드 제조사에 최적화된 종합 솔루션을 제공합니다.
           </p>
-          <div className="flex flex-wrap gap-4">
+          {/* <div className="flex flex-wrap gap-4">
             <button className="px-8 py-3 bg-[#173f97] text-white font-bold rounded-xl shadow-xl hover:bg-[#1a4bb3] transition-colors text-lg">
               제품 문의
             </button>
@@ -35,7 +35,7 @@ export default function CardFilmPage() {
               label="구조 보기"
               className="px-8 py-3 bg-white/10 backdrop-blur-md border-2 border-white/90 text-white font-bold rounded-xl hover:bg-white/20 transition-colors text-lg"
             />
-          </div>
+          </div> */}
         </div>
 
         {/* Hero Visual - Card Stack Illustration Effect */}
