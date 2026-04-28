@@ -2,16 +2,16 @@ import { PrinterIcon, ArrowRightIcon, ArrowDownIcon } from '@heroicons/react/24/
 
 export default function PadPrintingSolutionPage() {
   return (
-    <div className="w-full bg-stone-50/30 py-16 md:py-24">
+    <div className="w-full bg-stone-50/30 dark:bg-slate-950 py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* 페이지 헤더 */}
         <header className="mb-16 md:mb-20 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 px-4 py-1 rounded-full text-sm font-medium mb-4">
             <PrinterIcon className="w-4 h-4" />
             <span>Solutions 3</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-stone-950 tracking-tighter leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-stone-950 dark:text-white tracking-tighter leading-tight">
             인쇄산업
           </h1>
         </header>
@@ -33,11 +33,11 @@ export default function PadPrintingSolutionPage() {
           </div> */}
 
           {/* 오른쪽: 텍스트 영역 */}
-          <div className="flex-1 w-full bg-white p-8 lg:p-12 rounded-3xl shadow-xl shadow-blue-950/5 border border-stone-100">
+          <div className="flex-1 w-full bg-white dark:bg-slate-800 p-8 lg:p-12 rounded-3xl shadow-xl shadow-blue-950/5 dark:shadow-black/50 border border-stone-100 dark:border-slate-700">
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 {/* <span className="flex-shrink-0 w-2 h-2 mt-2.5 rounded-full bg-blue-700"></span> */}
-                <p className="text-lg lg:text-xl text-stone-800 leading-relaxed font-medium break-keep">
+                <p className="text-lg lg:text-xl text-stone-800 dark:text-stone-300 leading-relaxed font-medium break-keep">
                   정밀을 넘어, 표면에 가치를 인쇄합니다. 자동차 휠 및 내장재등을 위한 프리미엄 패드인쇄 솔루션
                 </p>
               </li>
@@ -48,7 +48,7 @@ export default function PadPrintingSolutionPage() {
 
         {/* 2번 문단: 이미지 섹션 */}
         <section>
-          <div className="w-full rounded-3xl overflow-hidden shadow-2xl border border-stone-200">
+          <div className="w-full rounded-3xl overflow-hidden shadow-2xl border border-stone-200 dark:border-slate-700">
             <img 
               src="/images/solutions/padprinting.png" 
               alt="Pad Printing Solution" 

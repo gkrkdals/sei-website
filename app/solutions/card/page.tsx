@@ -3,13 +3,13 @@ import ScrollButton from './ScrollButton';
 
 export default function CardFilmPage() {
   return (
-    <div className="w-full bg-stone-50/30">
+    <div className="w-full bg-stone-50/30 dark:bg-slate-950">
       
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[650px] overflow-hidden">
         {/* Background Image Placeholder with Premium Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#d7c6af] via-[#ceb79c] to-[#b99f83] z-0" />
-        <div className="absolute inset-0 bg-black/20 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#d7c6af] via-[#ceb79c] to-[#b99f83] dark:from-[#3f3a31] dark:via-[#2a2520] dark:to-[#1a1410] z-0" />
+        <div className="absolute inset-0 bg-black/20 dark:bg-black/40 z-10" />
         
         <div className="relative z-20 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center">
           <div className="inline-block px-4 py-1.5 bg-white shadow-lg border border-white/20 rounded-full text-[#173f97] text-xs md:text-sm font-bold mb-6 w-fit tracking-wider">
@@ -54,13 +54,12 @@ export default function CardFilmPage() {
 
       {/* Main Content Area */}
       <div className="max-w-6xl mx-auto px-6 relative z-30 pb-24 md:-mt-16">
-        <div className="bg-white rounded-[2rem] md:rounded-[2.5rem] shadow-2xl shadow-stone-200/60 p-6 md:p-16 border border-stone-100 mt-4 md:mt-0">
-          
+        <div className="bg-white dark:bg-slate-800 rounded-[2rem] md:rounded-[2.5rem] shadow-2xl shadow-stone-200/60 dark:shadow-black/50 p-6 md:p-16 border border-stone-100 dark:border-slate-700 mt-4 md:mt-0">
           {/* Why Card Film Section */}
           <section className="mb-24">
             <div className="mb-12">
-              <h2 className="text-3xl font-extrabold text-stone-900 mb-2">Why Card Film</h2>
-              <p className="text-stone-500 text-lg font-medium">카드 성능, 가공성, 품질 안정성을 고려한 카드 전용 필름 공급 솔루션</p>
+              <h2 className="text-3xl font-extrabold text-stone-900 dark:text-white mb-2">Why Card Film</h2>
+              <p className="text-stone-500 dark:text-stone-400 text-lg font-medium">카드 성능, 가공성, 품질 안정성을 고려한 카드 전용 필름 공급 솔루션</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -78,9 +77,9 @@ export default function CardFilmPage() {
                   desc: "레이저 각인용 overlay film과 전 세계 최고 수준의 25μm ultra-thin overlay film까지 대응 가능한 고기능 솔루션입니다."
                 }
               ].map((item, idx) => (
-                <div key={idx} className="bg-stone-50/80 rounded-3xl p-8 border border-stone-100 transition-all hover:scale-[1.02] hover:shadow-xl hover:bg-white">
-                  <h3 className="text-[#173f97] font-bold text-xl mb-4">{item.title}</h3>
-                  <p className="text-stone-600 text-base leading-relaxed break-keep">
+                <div key={idx} className="bg-stone-50/80 dark:bg-slate-700/50 rounded-3xl p-8 border border-stone-100 dark:border-slate-600 transition-all hover:scale-[1.02] hover:shadow-xl hover:bg-white dark:hover:bg-slate-700">
+                  <h3 className="text-[#173f97] dark:text-blue-300 font-bold text-xl mb-4">{item.title}</h3>
+                  <p className="text-stone-600 dark:text-stone-400 text-base leading-relaxed break-keep">
                     {item.desc}
                   </p>
                 </div>
@@ -91,37 +90,37 @@ export default function CardFilmPage() {
           {/* Product Structure Section */}
           <section className="mb-24" id="structure">
             <div className="mb-10">
-              <h2 className="text-3xl font-extrabold text-stone-900 mb-1">제품 구조</h2>
-              <p className="text-stone-500 text-lg font-medium">Card film structure overview</p>
+              <h2 className="text-3xl font-extrabold text-stone-900 dark:text-white mb-1">제품 구조</h2>
+              <p className="text-stone-500 dark:text-stone-400 text-lg font-medium">Card film structure overview</p>
             </div>
             
             <div className="flex flex-col lg:flex-row gap-12 items-stretch">
               {/* Visual Diagram Placeholder */}
-              <div className="w-full lg:w-3/5 bg-gradient-to-b from-[#f7f3ec] to-[#efe7da] rounded-[2rem] border border-stone-200/50 p-12 flex flex-col justify-center relative overflow-hidden min-h-[400px]">
+              <div className="w-full lg:w-3/5 bg-gradient-to-b from-[#f7f3ec] dark:from-slate-700 to-[#efe7da] dark:to-slate-800 rounded-[2rem] border border-stone-200/50 dark:border-slate-600/50 p-12 flex flex-col justify-center relative overflow-hidden min-h-[400px]">
                 <div className="space-y-4 relative z-10">
-                  <div className="w-3/4 h-12 bg-white rounded-lg shadow-md transform skew-x-[-20deg] border border-stone-100 flex items-center px-8 font-bold text-stone-400">Overlay Film</div>
-                  <div className="w-3/4 h-12 bg-[#dfe4ee] rounded-lg shadow-md transform skew-x-[-20deg] border border-stone-100 flex items-center px-8 font-bold text-stone-500 ml-4">Laser Engraving Overlay</div>
-                  <div className="w-3/4 h-12 bg-white rounded-lg shadow-md transform skew-x-[-20deg] border border-stone-100 flex items-center px-8 font-bold text-stone-400 ml-8">Transparent Core Film</div>
-                  <div className="w-3/4 h-12 bg-[#e2d1b7] rounded-lg shadow-md transform skew-x-[-20deg] border border-stone-100 flex items-center px-8 font-bold text-stone-600 ml-12">White Core Film</div>
+                  <div className="w-3/4 h-12 bg-white dark:bg-slate-600 rounded-lg shadow-md transform skew-x-[-20deg] border border-stone-100 dark:border-slate-500 flex items-center px-8 font-bold text-stone-400 dark:text-slate-300">Overlay Film</div>
+                  <div className="w-3/4 h-12 bg-[#dfe4ee] dark:bg-slate-500 rounded-lg shadow-md transform skew-x-[-20deg] border border-stone-100 dark:border-slate-400 flex items-center px-8 font-bold text-stone-500 dark:text-slate-200 ml-4">Laser Engraving Overlay</div>
+                  <div className="w-3/4 h-12 bg-white dark:bg-slate-600 rounded-lg shadow-md transform skew-x-[-20deg] border border-stone-100 dark:border-slate-500 flex items-center px-8 font-bold text-stone-400 dark:text-slate-300 ml-8">Transparent Core Film</div>
+                  <div className="w-3/4 h-12 bg-[#e2d1b7] dark:bg-slate-500 rounded-lg shadow-md transform skew-x-[-20deg] border border-stone-100 dark:border-slate-400 flex items-center px-8 font-bold text-stone-600 dark:text-slate-200 ml-12">White Core Film</div>
                 </div>
               </div>
               
               <div className="w-full lg:w-2/5 flex flex-col gap-4">
-                <div className="bg-[#f1ede6] p-8 rounded-2xl border border-stone-200/30 flex-1">
-                  <h4 className="text-[#4b6a46] font-bold text-lg mb-3">공급 소재</h4>
+                <div className="bg-[#f1ede6] dark:bg-slate-700 p-8 rounded-2xl border border-stone-200/30 dark:border-slate-600/30 flex-1">
+                  <h4 className="text-[#4b6a46] dark:text-emerald-300 font-bold text-lg mb-3">공급 소재</h4>
                   <p className="text-stone-600 text-[0.95rem] leading-relaxed">
                     PVC, rPVC, PET, PETG, PC 기반의 카드 전용 필름으로 카드 구조와 용도에 맞는 소재 구성이 가능합니다.
                   </p>
                 </div>
-                <div className="bg-[#f1ede6] p-8 rounded-2xl border border-stone-200/30 flex-1">
-                  <h4 className="text-[#4b6a46] font-bold text-lg mb-3">공급 품목</h4>
-                  <p className="text-stone-600 text-[0.95rem] leading-relaxed">
+                <div className="bg-[#f1ede6] dark:bg-slate-700 p-8 rounded-2xl border border-stone-200/30 dark:border-slate-600/30 flex-1">
+                  <h4 className="text-[#4b6a46] dark:text-emerald-300 font-bold text-lg mb-3">공급 품목</h4>
+                  <p className="text-stone-600 dark:text-stone-300 text-[0.95rem] leading-relaxed">
                     White core film, Transparent core film, Overlay film, Laser engraving overlay film, 25 micron ultra-thin overlay film
                   </p>
                 </div>
-                <div className="bg-[#f1ede6] p-8 rounded-2xl border border-stone-200/30 flex-1">
-                  <h4 className="text-[#4b6a46] font-bold text-lg mb-3">적용 분야</h4>
-                  <p className="text-stone-600 text-[0.95rem] leading-relaxed">
+                <div className="bg-[#f1ede6] dark:bg-slate-700 p-8 rounded-2xl border border-stone-200/30 dark:border-slate-600/30 flex-1">
+                  <h4 className="text-[#4b6a46] dark:text-emerald-300 font-bold text-lg mb-3">적용 분야</h4>
+                  <p className="text-stone-600 dark:text-stone-300 text-[0.95rem] leading-relaxed">
                     금융카드, ID카드, 멤버십카드, 친환경 카드, 레이저 각인 카드 등 다양한 카드 제품에 적용 가능합니다.
                   </p>
                 </div>
@@ -130,11 +129,11 @@ export default function CardFilmPage() {
           </section>
 
           {/* Footer Branding Section */}
-          <section className="mt-12 pt-12 border-t border-stone-100">
+          <section className="mt-12 pt-12 border-t border-stone-100 dark:border-slate-700">
             <div className="flex flex-col lg:flex-row gap-12 items-start justify-between mb-16">
               <div className="flex-1">
-                <h3 className="text-3xl font-extrabold text-[#173f97] mb-6">SEI Card Film Solutions</h3>
-                <p className="text-stone-600 text-lg leading-relaxed mb-8 break-keep font-medium">
+                <h3 className="text-3xl font-extrabold text-[#173f97] dark:text-blue-300 mb-6">SEI Card Film Solutions</h3>
+                <p className="text-stone-600 dark:text-stone-300 text-lg leading-relaxed mb-8 break-keep font-medium">
                   SEI는 국내 카드 제조사에 카드 구조별 맞춤형 필름 소재를 공급하며,
                   카드 성능, 가공성, 친환경성, 디자인 차별화까지 고려한 실질적인 카드 소재 솔루션을 제공합니다.
                 </p>
@@ -143,20 +142,20 @@ export default function CardFilmPage() {
                 </span>
               </div>
 
-              <div className="w-full lg:w-1/3 bg-[#eee8df] p-8 rounded-3xl border border-stone-200/50">
+              <div className="w-full lg:w-1/3 bg-[#eee8df] dark:bg-slate-700 p-8 rounded-3xl border border-stone-200/50 dark:border-slate-600/50">
                 <div className="flex gap-2 mb-6">
-                  <span className="bg-[#173f97] text-white px-4 py-1.5 rounded-full text-xs font-bold">White Core</span>
-                  <span className="bg-[#d6c29a] text-stone-800 px-4 py-1.5 rounded-full text-xs font-bold">Overlay</span>
+                  <span className="bg-[#173f97] dark:bg-blue-700 text-white px-4 py-1.5 rounded-full text-xs font-bold">White Core</span>
+                  <span className="bg-[#d6c29a] dark:bg-amber-700 text-stone-800 dark:text-amber-100 px-4 py-1.5 rounded-full text-xs font-bold">Overlay</span>
                 </div>
-                <h4 className="text-[#173f97] font-bold text-xl mb-3">공급 기반 적용</h4>
-                <p className="text-stone-600 text-sm leading-relaxed break-keep">
+                <h4 className="text-[#173f97] dark:text-blue-300 font-bold text-xl mb-3">공급 기반 적용</h4>
+                <p className="text-stone-600 dark:text-stone-300 text-sm leading-relaxed break-keep">
                   국제 결제 카드 제조 기준에 부합하는 고품질 필름을 국내 메이저 카드 제조사에 안정적으로 공급하고 있습니다.
                 </p>
               </div>
             </div>
             
             {/* CTA Banner */}
-            <div className="bg-[#173f97] rounded-[2rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between text-white gap-6">
+            <div className="bg-[#173f97] dark:bg-blue-900 rounded-[2rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between text-white gap-6">
               <div className="text-2xl md:text-3xl font-bold tracking-tight">
                 카드 전용 필름 도입 문의
               </div>

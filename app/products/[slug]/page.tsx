@@ -22,31 +22,33 @@ export default async function ProductDetailPage({ params }: Props) {
   }
 
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-stone-50/30 dark:bg-slate-950">
       {/* 상단 히어로 영역 */}
-      <section className=" py-20 border-b border-stone-100">
+      <section className=" py-20 border-b border-stone-100 dark:border-slate-800">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-black text-stone-900 mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-black text-stone-900 dark:text-white mb-4 leading-tight">
             {product.title}
           </h1>
-          <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1.5 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full"></div>
         </div>
       </section>
 
       {/* 상세 내용 영역 */}
       <article className="max-w-4xl mx-auto px-6 py-16">
         <div 
-          className="prose prose-stone max-w-none 
-            prose-headings:font-black prose-headings:text-stone-900
-            prose-p:text-stone-600 prose-p:leading-relaxed
-            prose-img:rounded-3xl prose-img:shadow-xl prose-img:my-12"
+          className="prose dark:prose-invert prose-stone dark:prose-stone max-w-none 
+            prose-headings:font-black prose-headings:text-stone-900 dark:prose-headings:text-white
+            prose-p:text-stone-600 dark:prose-p:text-stone-300 prose-p:leading-relaxed
+            prose-a:text-blue-600 dark:prose-a:text-blue-400
+            prose-strong:text-stone-900 dark:prose-strong:text-white
+            prose-img:rounded-3xl prose-img:shadow-xl dark:prose-img:shadow-black/50 prose-img:my-12"
           dangerouslySetInnerHTML={{ __html: product.description }} 
         />
       </article>
 
       {/* 하단 푸터 느낌의 안내 */}
-      <footer className="max-w-4xl mx-auto px-6 py-20 border-t border-stone-100 text-center">
-        <p className="text-stone-400 text-sm font-medium">
+      <footer className="max-w-4xl mx-auto px-6 py-20 border-t border-stone-100 dark:border-slate-800 text-center">
+        <p className="text-stone-400 dark:text-stone-600 text-sm font-medium">
           에스이아이(주) 제품에 대해 더 궁금하신 점은 고객센터로 문의해 주시기 바랍니다.
         </p>
       </footer>
