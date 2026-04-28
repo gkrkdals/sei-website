@@ -53,7 +53,7 @@ export default function Header() {
         
         {/* 로고 */}
         <Link href="/" className="flex items-center gap-2 group z-50 min-w-fit">
-          <img src="/logo.png" alt="SEI Logo" className="w-40 h-40 object-contain group-hover:animate-pulse transition-transform" />
+          <img src="/logo.png" alt="SEI Logo" className="w-32 h-32 md:w-40 md:h-40 object-contain group-hover:animate-pulse transition-transform" />
         </Link>
 
         {/* 중앙 네비게이션 */}
