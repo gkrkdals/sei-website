@@ -106,7 +106,7 @@ export default function AdminBackdoor() {
   return (
     <div className="h-screen bg-stone-100 flex flex-col font-sans overflow-hidden">
       
-      <div className="flex-1 flex gap-8 p-8 min-h-0">
+      <div className="flex-1 flex gap-8 p-8 min-h-0 mt-13">
         
         {/* --- 좌측: 카테고리 리스트 --- */}
         <aside className="w-80 bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden flex flex-col">

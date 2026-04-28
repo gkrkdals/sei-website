@@ -11,7 +11,7 @@ export default function CardFilmPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#d7c6af] via-[#ceb79c] to-[#b99f83] dark:from-[#3f3a31] dark:via-[#2a2520] dark:to-[#1a1410] z-0" />
         <div className="absolute inset-0 bg-black/20 dark:bg-black/40 z-10" />
         
-        <div className="relative z-20 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center">
+        <div className="relative z-20 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center pt-10 pb-10 md:pt-5 md:pb-5">
           <div className="inline-block px-4 py-1.5 bg-white shadow-lg border border-white/20 rounded-full text-[#173f97] text-xs md:text-sm font-bold mb-6 w-fit tracking-wider">
             CARD FILM SOLUTIONS
           </div>
@@ -22,9 +22,9 @@ export default function CardFilmPage() {
             Card Film Solutions
           </p>
           <p className="max-w-2xl text-white/95 text-base md:text-lg leading-relaxed mb-10 break-keep drop-shadow-sm font-medium">
-            SEI는 신용카드 및 ID카드 제조를 위한 다양한 고기능 필름 소재를 공급합니다.<br/>
-            PVC, rPVC, PET, PETG, PC 기반의 카드용 필름부터 White Core, Transparent Core,
-            Overlay, 레이저 각인용 Overlay까지 국내 카드 제조사에 최적화된 소재 솔루션을 제공합니다.
+            SEI는 신용카드 및 ID카드 제조를 위한 프리미엄 카드 솔루션을 공급합니다.<br/>
+            친환경 우드 카드부터 PVC, rPVC, PET, PETG, PC 기반의 고기능 필름 소재까지,
+            White Core, Transparent Core, Overlay, 레이저 각인용 Overlay 등 국내 카드 제조사에 최적화된 종합 솔루션을 제공합니다.
           </p>
           <div className="flex flex-wrap gap-4">
             <button className="px-8 py-3 bg-[#173f97] text-white font-bold rounded-xl shadow-xl hover:bg-[#1a4bb3] transition-colors text-lg">
@@ -55,10 +55,42 @@ export default function CardFilmPage() {
       {/* Main Content Area */}
       <div className="max-w-6xl mx-auto px-6 relative z-30 pb-24 md:-mt-16">
         <div className="bg-white dark:bg-slate-800 rounded-[2rem] md:rounded-[2.5rem] shadow-2xl shadow-stone-200/60 dark:shadow-black/50 p-6 md:p-16 border border-stone-100 dark:border-slate-700 mt-4 md:mt-0">
-          {/* Why Card Film Section */}
+          {/* Wood Card Section */}
           <section className="mb-24">
             <div className="mb-12">
-              <h2 className="text-3xl font-extrabold text-stone-900 dark:text-white mb-2">Why Card Film</h2>
+              <h2 className="text-3xl font-extrabold text-stone-900 dark:text-white mb-2">Wood Card</h2>
+              <p className="text-stone-500 dark:text-stone-400 text-lg font-medium">친환경 소재와 프리미엄 감성, 완전한 카드 기능을 갖춘 우드 카드 솔루션</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "친환경 소재 중심",
+                  desc: "4개의 목재층과 1개의 종이층, 바이오 접착 기반 구조로 카드 본체의 95% 이상이 생분해성 소재로 구성됩니다."
+                },
+                {
+                  title: "프리미염 디자인 감성",
+                  desc: "목재 특유의 결감과 질감으로 각 카드가 서로 다른 고유한 외관을 가지며 브랜드 차별화에 적합합니다."
+                },
+                {
+                  title: "실사용 가능한 카드 구조",
+                  desc: "EMV 모듈, 안테나, 마그네틱 스트라이프 등 결제 및 보안 요소들을 포함한 완전한 카드 기능을 지원합니다."
+                }
+              ].map((item, idx) => (
+                <div key={idx} className="bg-stone-50/80 dark:bg-slate-700/50 rounded-3xl p-8 border border-stone-100 dark:border-slate-600 transition-all hover:scale-[1.02] hover:shadow-xl hover:bg-white dark:hover:bg-slate-700">
+                  <h3 className="text-amber-700 dark:text-amber-400 font-bold text-xl mb-4">{item.title}</h3>
+                  <p className="text-stone-600 dark:text-stone-400 text-base leading-relaxed break-keep">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Card Film Section */}
+          <section className="mb-24">
+            <div className="mb-12">
+              <h2 className="text-3xl font-extrabold text-stone-900 dark:text-white mb-2">Card Film</h2>
               <p className="text-stone-500 dark:text-stone-400 text-lg font-medium">카드 성능, 가공성, 품질 안정성을 고려한 카드 전용 필름 공급 솔루션</p>
             </div>
             
