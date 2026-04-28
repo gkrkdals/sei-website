@@ -34,13 +34,13 @@ export default function Home() {
           </h1>
           <p className="text-lg md:text-xl text-blue-50/80 dark:text-blue-100/70 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
             세계 최고 수준의 산업용 장비와 <br className='sm:hidden'/>특수 잉크 솔루션으로<br/>
-            고객의 비즈니스에 혁신적인 경쟁력을 <br className='sm:hidden'/>더해드립니다.
+            고객의 비즈니스에 혁신적인 경쟁력을 <br className='sm:hidden '/>더해드립니다.
           </p>
           <div className="flex justify-center gap-4">
-            <Link href="/profile" className="px-8 py-4 bg-white dark:bg-blue-100 text-blue-950 dark:text-blue-950 font-bold text-sm rounded-full hover:bg-stone-50 dark:hover:bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <Link href="/profile" className="px-8 py-4 bg-white dark:bg-blue-100 text-blue-950 dark:text-blue-950 font-bold text-xs md:text-sm rounded-full hover:bg-stone-50 dark:hover:bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
               기업 현황 보기
             </Link>
-            <Link href="/solutions/automotive" className="px-8 py-4 bg-blue-800/40 dark:bg-blue-900/50 text-white dark:text-blue-100 font-bold text-sm rounded-full border border-blue-700 dark:border-blue-600 hover:bg-blue-700/50 dark:hover:bg-blue-800/60 transition-all duration-300 backdrop-blur-sm">
+            <Link href="/solutions/automotive" className="px-8 py-4 bg-blue-800/40 dark:bg-blue-900/50 text-white dark:text-blue-100 font-bold text-xs md:text-sm rounded-full border border-blue-700 dark:border-blue-600 hover:bg-blue-700/50 dark:hover:bg-blue-800/60 transition-all duration-300 backdrop-blur-sm">
               솔루션 둘러보기
             </Link>
           </div>
