@@ -76,11 +76,11 @@ export default function AutomotiveInkPage() {
             </div>
             <div className="p-6 lg:p-8 flex-1 flex flex-col gap-6 justify-center">
               {/* 이미지 영역: 4개 로고 */}
-              <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                <img src="/images/products/automotive/volkswagen.png" alt="Volkswagen 로고" className="w-16 h-16 object-contain"/>
-                <img src="/images/products/automotive/bmw.png" alt="BMW 로고" className="w-16 h-16 object-contain"/>
-                <img src="/images/products/automotive/alfaromeo.png" alt="Alfa 로고" className="w-16 h-16 object-contain"/>
-                <img src="/images/products/automotive/porsche.png" alt="Porsche 로고" className="w-16 h-16 object-contain"/>
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                <img src="/images/products/automotive/volkswagen.png" alt="Volkswagen 로고" className="w-13 h-13 object-contain"/>
+                <img src="/images/products/automotive/bmw.png" alt="BMW 로고" className="w-13 h-13 object-contain"/>
+                <img src="/images/products/automotive/alfaromeo.png" alt="Alfa 로고" className="w-13 h-13 object-contain"/>
+                <img src="/images/products/automotive/porsche.png" alt="Porsche 로고" className="w-13 h-13"/>
               </div>
               {/* 텍스트 영역 */}
               <ul className="space-y-3">
